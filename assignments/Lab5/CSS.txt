@@ -1,0 +1,421 @@
+--media query
+---------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit esse aliquid quisquam, delectus quis repellat id reprehenderit asperiores, deleniti, voluptatem et excepturi deserunt dolor sed. Possimus dicta repellat libero a!</p>
+  </body>
+</html>
+---------------
+/* media queries 
+
+
+
+media type : screen , speech , print , all */
+* {
+    box-sizing: border-box;
+   
+    font-family: "segoe ui light";
+  }
+body{
+    background-color: aquamarine;
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  
+ /* @media all and (max-width: 1200px) and (min-width: 992px) {
+    body{
+      background-color: red;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }*/
+
+  @media all and (max-width: 1200px)  {
+    body{
+      background-color: red;
+    }
+    h1 {
+      font-size: 35px;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    body{
+        background-color: green;
+      }
+      h1 {
+        font-size: 25px;
+      }
+  }
+
+  @media screen and (max-width: 700px) {
+    body{
+        background-color: blue;
+      }
+      h1 {
+        font-size: 20px;
+      }
+  }
+  
+  /*
+  
+  bootstrap Breakpoints
+  
+  xlarage  1200<
+  
+  large 1200-992 
+  
+  medium  992 - 768
+  
+  small  786 - 576
+  
+  xsmall <576
+  
+  
+  
+  
+  
+  */
+  -------------
+----------------------------
+--hide Elements
+-------
+<div class="demo">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nostrum
+        officiis rem voluptate enim, repellat aut explicabo aliquid consequuntur
+        voluptatibus veritatis at nulla, numquam sunt quod, praesentium
+        laboriosam non odit.
+      </p>
+    </div>
+-------------
+.demo {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  /* display: none; */
+  /* opacity: 1;             1:.9  */
+  /* visibility: hidden;                      hidden                visible   */
+  /* overflow:scroll;          auto            hidden       visible      scroll */
+}
+----------------
+----------------------------
+--hover, transform
+------------
+<div class="demo"></div>
+---
+.demo {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+  
+    margin: 100px;
+    transition: transform 6s;
+    /* transition-delay:3s ; */
+    /* transform-origin: top right; */
+  }
+  
+  .demo:hover {
+    background-color: rgb(31, 187, 73);
+  
+    transform: rotate(45deg);
+    /* transform: scale(0.5, 0.5); */
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    /* transform: translateX(-200px); */
+    /* transform: translateY(-200px); */
+    /* transform: translate(100px , 200px ); */
+    /* transform: skew(180deg); */
+    /* transition-property: all; */
+  }
+  ---------------
+----------------------------
+--units 
+-------
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+-------------
+p {
+    font-size: 1rem;
+   
+  }
+
+  html{
+    font-size: 50px;
+  }
+  /*
+
+relative unit
+
+rem  1rem ==== font size of root elemnt
+1rem == 16px
+
+
+em font-size of nearest parent
+
+*
+-------------------
+--------------------
+<div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+---------------
+p {
+    font-size: 1em;
+   
+  }
+div{
+    font-size: 30px;
+}
+------------------
+---------------------------------
+--animation
+------
+ <div class="demo"></div>
+
+    <div class="yasmeen"></div>
+---------------------------
+.demo {
+    background-color: tomato;
+    width: 300px;
+    height: 300px;
+  animation:coloring 3s;
+  
+  animation-fill-mode:forwards;
+  
+     animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+  
+    /* animation:coloring 5s infinite , slider 3s infinite alternate; */
+  }
+  
+  /* animation */
+  
+  @keyframes coloring {
+    from {
+      background-color: teal;
+    }
+    to {
+      background-color: indigo;
+    }
+  }
+  
+  @keyframes slider {
+    0% {
+        background-color:aquamarine;
+    }
+    25% {
+        background-color:red;
+    }
+    50% {
+        background-color:tomato;
+    }
+    75% {
+        background-color:teal;
+    }
+    100% {
+        background-color:indigo;
+    }
+  }
+  
+  
+  
+  @keyframes circle {
+    0% {
+      border-radius: 0;
+      transform: rotate(0);
+    }
+    to {
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+  }
+  
+  .yasmeen {
+    width: 200px;
+    height: 200px;
+    margin: 400px;
+    background-color: red;
+    animation: circle 3s  infinite alternate;
+  
+    /* animation-fill-mode:backwards ; */
+  
+    animation-timing-function: steps(6);
+    /* animation-timing-function:ease-in-out; */
+
+  }
+  -----------------
+--------------------------------
+--flex
+------
+<div class="parent">
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+      <div class="child child5">5</div>
+    </div>
+---------------------
+.parent {
+    height: 700px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row; /* btt7km fe trteb el child left , right ,
+     top , bottom ...colum,row-reverse*/
+  
+    flex-wrap: nowrap; /*make new line form child or not .... wrap,nowrap*/
+  
+    /* flex-flow:row nowrap ;*/ /*shorthand for  flex-direction ,  flex-wrap*/
+  
+    /*justify-content: space-around*/; /*btwz3 el child 3al x-axis*/
+    /* flex-start,flex-end,center,space-between,space-around,space-evenly*/
+  
+    /*align-items: stretch;*/ /*btwz3 el child 3al y-axis (vertical)*/
+  /* flex-start,flex-end,center,stretch*/
+   /* align-content: stretch;*/ /*btt7km fe el space between rows*/
+  }
+  
+  .child {
+    width: 200px;
+    height: 200px;
+  
+    background-color: teal;
+  
+   
+  }
+  .child1{
+    background-color: red;
+  }
+  .child2{
+    background-color: green;
+  }
+  .child3{
+    background-color: yellow;
+  }
+  .child4{
+    background-color: blue;
+  }
+  .child5{
+    background-color: indigo;
+  }
+
+
+
+
+
+   
+  .child2{
+       /* flex-grow: 5;  */
+      /* flex-shrink:5; */
+     
+  
+  }
+ 
+  .child5{
+      /* flex-grow: 2; */
+      flex-shrink: 2;
+      flex-basis: 50px;
+      
+  }
+
+
+
+ 
+  
+  /*
+  
+  body{
+      direction: ltr;
+  } */
+--------------------
+--grouping selectors
+--------------
+<div class="home">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate iure
+        mollitia perferendis consequuntur ratione pariatur suscipit beatae
+      </p>
+      <div class="child">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error,
+          facere!
+        </p>
+      </div>
+    </div>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt?</p>
+
+-------------------------
+
+.home p {
+
+    background-color: teal;
+} 
+
+/* direct child
+.home > p { 
+    background-color: tomato;
+
+} */
+/* 
+grouping selector
+
+.home p , .home h2{
+
+    color: turquoise;
+} */
+
+
+
+
+------------------
+---------------------------------
+shadow
+-----
+<div></div>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+-------------------
+
+div {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: coral;
+    box-shadow: 10px 10px 10px lightblue;
+  }
+  h1 {
+    text-shadow: 2px 2px 5px red;
+  }
+
+----------------------
+--gradiant
+--------------
+ <div></div>
+---------------
+
+div {
+    height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);/*top to bottom (default)*/
+  /*background-image: linear-gradient(to right, red , yellow);
+  background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+   background-image: radial-gradient(red, yellow, green);*/
+  }
+  
+
+--------------

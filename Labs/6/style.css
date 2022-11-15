@@ -1,0 +1,58 @@
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.demo {
+	background-color: blueviolet;
+	width: 300px;
+	/* height: 300px; */
+	aspect-ratio: 1;
+	margin: 100px;
+	/* border-top-left-radius: 50%;
+	border-bottom-right-radius: 50%; */
+	border-radius: 50% 0% 50% 0%;
+	background-image: url(./images/60de6168b57a27aa73f04323237d77f7b1d36c9cbac72cc3a3de1ab1a42c23b7.gif);
+	background-position-x: 40%;
+	background-position-y: 25%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: border-radius 0.3s cubic-bezier(0, 0.62, 0.84, 0.77) 0s;
+
+	position: relative;
+}
+
+.demo:hover {
+	border-radius: 0% 50% 0% 50%;
+	transition: border-radius 0.15s cubic-bezier(0, 0.62, 0.84, 0.77) 1s;
+}
+.demo-child {
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	transform-origin: top left;
+	transition: all 0.15s cubic-bezier(0, 0.62, 0.84, 0.77);
+	background-image: url(./images/5f6100be9a1f8aab94270b871ec98cbdf883f33a4d0f590af716c228f4db1246.jpg);
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.demo:hover .demo-child {
+	transform: scale(3);
+	transition: all 0.3s cubic-bezier(0, 0.62, 0.84, 0.77);
+	top: 0%;
+	left: 0%;
+}
+
+.main-header {
+	background-color: blueviolet;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}

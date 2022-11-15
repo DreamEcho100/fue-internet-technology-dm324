@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="demo"></div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil itaque
+      reiciendis dignissimos in earum animi, cumque modi inventore porro nostrum
+      voluptatibus explicabo, ipsa consectetur adipisci velit iusto praesentium,
+      voluptatem amet.
+    </p>
+  </body>
+</html>
+-------------
+.demo{
+    width: 300px;
+    height: 300px;
+    background-color: #4b0082;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+-------------
+-------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div class="parent">
+    <div class="child"></div>
+   </div>
+  </body>
+</html>
+------------
+.parent{
+    width: 300px;
+    height: 300px;
+    background-color: #4b0082;
+    
+
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    
+
+}
+--------------
+--------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div class="parent">
+    <div class="child"></div>
+   </div>
+  </body>
+</html>
+------------
+.parent{
+    width: 300px;
+    height: 300px;
+    background-color: #4b0082;
+    position: relative;
+    
+
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 0px;
+    /*right: 0px;*/
+
+    
+
+}
+-------------
+------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+      voluptates qui amet labore voluptatibus nobis odio. Sapiente ipsam aliquid
+      voluptate voluptas id aperiam ullam quos et, a, nesciunt nam ut.
+    </p>
+    <div class="child"></div>
+  </body>
+</html>
+--------------
+
+.child{
+    width: 100%;
+    height: 30px;
+    background-color: tomato;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+
+}
+---------------
+-----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div class="one">1</div>
+   <div class="two">2</div>
+   <div class="three">3</div>
+  </body>
+</html>
+-----------
+
+.one{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 700;
+    
+
+}
+.two{
+    width: 300px;
+    height: 300px;
+    background-color: indigo;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    z-index: 120;
+    
+
+}
+.three{
+    width: 300px;
+    height: 300px;
+    background-color: teal;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+    z-index: 100;
+    
+
+}
+-------------------
+-------------------------------
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="demo"></div>
+  </body>
+</html>
+---------------
+/* *{  box-sizing: border-box;}
+
+ */
+
+.demo {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  box-sizing: border-box;
+  border: 10px solid black;
+  padding: 50px;
+}
+------------
+------------------

@@ -1,0 +1,123 @@
+/************************/
+/********* Global Style ***********/
+/************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+.button-v1 {
+	border: 1px solid white;
+	color: white;
+	padding: 6px;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button-v1:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+/************************/
+/********* Main Header ***********/
+/************************/
+
+#main-header {
+	width: 100%;
+	padding: 0 16px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	position: fixed;
+}
+#main-header .logo {
+	width: 200px;
+	display: flex;
+}
+#main-header .logo img {
+	width: 100%;
+}
+
+#main-header nav ul,
+#main-header nav {
+	display: flex;
+}
+
+#main-header nav {
+	justify-content: space-between;
+	width: 100%;
+}
+
+#main-header nav ul {
+	align-items: center;
+	gap: 8px;
+}
+#main-header nav ul a {
+}
+
+/************************/
+/********* Hero Section ***********/
+/************************/
+
+.hero {
+	background-image: url(../images/drew-coffman-1872.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	max-height: 700px;
+
+	padding: 70px;
+	text-align: center;
+	font-size: 18px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+	gap: 4%;
+}
+
+.hero > * {
+	padding: 5px 0;
+}
+
+.hero h1 {
+	font-weight: light;
+}
+
+.hero .buttons-container button {
+	margin: 5px;
+}

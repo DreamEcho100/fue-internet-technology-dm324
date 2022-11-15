@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+  
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 20;
+  }
+  body {
+    margin: 0px;
+  }
+  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .navbar-left {
+    float: left;
+  }
+  
+  .navbar-right {
+    float: right;
+  }
+  
+  .ulnav li {
+    display: inline-block;
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .ulnav {
+    list-style-type: none;
+  }
+  .bakery-logo {
+    width: 200px;
+  }
+  .home {
+    padding: 1px;
+    background-image: url(images/drew-coffman-1872.jpg);
+    background-position: center;
+    height: 100vh;
+    color: white;
+  }
+  .home-conent {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .home-conent p {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .home-conent button {
+    padding: 0px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    color: white;
+  }
+  
+  .b1 {
+    background-color: rgba(185, 116, 116, 0);
+    border: 2px solid white;
+  }

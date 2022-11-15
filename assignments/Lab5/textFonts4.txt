@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto
+      veritatis quo facere quidem consectetur eligendi, magnam cumque odit nihil
+      harum repellendus! Commodi dignissimos dicta temporibus omnis sapiente
+      repellat accusantium.
+    </p>
+    <a href="https://www.google.com">Google</a>
+  </body>
+</html>
+-------------
+p{
+    font-size: 40px;
+    font-weight: normal;/* 100-900 bold bolder*/
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1{
+    /*google fonts*/
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    text-decoration: underline red;/*overline,throughline,underline*/
+   font-style: italic;
+   text-transform: uppercase ;/*lowercase capitalize*/
+}
+a{
+    text-decoration: none;
+    color: salmon;
+}
+-------------
+-------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="demo"></div>
+    
+  </body>
+</html>
+----------------
+
+.demo{
+    background-color: royalblue;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+    /* border-width: 10px;
+    border-color: tomato;
+    border-style: double ;dashed dotted */
+    /* border:10px red double; */
+    /* border: none; */
+    /* border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%; */
+    border-radius: 50%;
+}
+---------------
+----------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iusto
+        veritatis quo facere quidem consectetur eligendi, magnam cumque odit
+        nihil harum repellendus! Commodi dignissimos dicta temporibus omnis
+        sapiente repellat accusantium.
+      </p>
+    </div>
+  </body>
+</html>
+-----------
+.bg{
+    width: 600px;
+    height: 600px;
+    background-color: tomato;
+    background-image: url(/images/one.jpg);
+    background-repeat:no-repeat;/*repeat x,repreat y*/
+    /* background-size: 100% 100%; */
+    background-position: center;/*bottom right*/
+    background-size: cover;
+
+}
+body{
+    background-image: url(/images/two.png);
+}
+---------------
+---------------------------
+
