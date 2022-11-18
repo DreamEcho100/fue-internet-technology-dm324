@@ -41,9 +41,13 @@
 	display: flex;
 	gap: 48px;
 }
+
 .show-case-section .img {
 	width: 50%;
+	padding: 10px;
+	object-fit: cover;
 }
+
 .show-case-section .text-container {
 	width: 50%;
 	display: flex;
@@ -55,20 +59,18 @@
 .show-case-section .text-container h2 {
 	font-weight: 400;
 }
-.show-case-section .img {
-	padding: 10px;
-	object-fit: cover;
-}
 
 @media screen and (max-width: 800px) {
 	.show-case-section {
 		flex-direction: column;
 		gap: 32px;
 	}
+
 	.show-case-section .img,
 	.show-case-section .text-container {
 		width: 100%;
 	}
+
 	.show-case-section .text-container {
 		align-items: center;
 		text-align: center;
