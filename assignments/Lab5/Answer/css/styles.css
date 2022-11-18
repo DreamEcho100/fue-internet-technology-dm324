@@ -1,7 +1,55 @@
 /******************************************/
-/************** Hero Section **************/
+/************** Main Header **************/
 /******************************************/
 
+#main-header {
+	width: 100%;
+	padding: 0 16px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	position: fixed;
+}
+#main-header .logo {
+	width: 200px;
+	display: flex;
+}
+#main-header .logo img {
+	width: 100%;
+}
+
+#main-header nav ul,
+#main-header nav {
+	display: flex;
+}
+
+#main-header nav {
+	justify-content: space-between;
+	width: 100%;
+}
+
+#main-header nav ul {
+	align-items: center;
+	gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+	#main-header {
+		height: 100px;
+	}
+	#main-header nav {
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-direction: column;
+	}
+}
+
+/******************************************/
+/************** Hero Section **************/
+/******************************************/
 #hero {
 	background-image: url(../images/drew-coffman-1872.jpg);
 	background-repeat: no-repeat;
@@ -10,7 +58,7 @@
 
 	padding: 70px;
 	text-align: center;
-	font-size: 18px;
+	font-size: 20px;
 
 	display: flex;
 	flex-direction: column;
@@ -18,7 +66,6 @@
 	justify-content: center;
 
 	color: white;
-	gap: 4%;
 }
 
 #hero > * {
@@ -26,7 +73,7 @@
 }
 
 #hero h1 {
-	font-weight: light;
+	font-size: 44px;
 }
 
 #hero .buttons-container button {
