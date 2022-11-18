@@ -56,7 +56,7 @@
 	background-position: center;
 	background-size: cover;
 
-	padding: 70px;
+	padding: 70px 40px;
 	text-align: center;
 	font-size: 20px;
 
@@ -69,7 +69,7 @@
 }
 
 #hero > * {
-	padding: 5px 0;
+	padding: 10px 0;
 }
 
 #hero h1 {
@@ -83,9 +83,6 @@
 /******************************************/
 /*********** Our Baking Section ***********/
 /******************************************/
-#gallery {
-	padding: 20px 24px;
-}
 #gallery > header {
 	text-align: center;
 	display: flex;
@@ -117,7 +114,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	padding: 25px;
 }
 
 /******************************************/
@@ -125,7 +121,6 @@
 /******************************************/
 
 #final {
-	padding: 40px;
 	background-color: grey;
 	text-align: center;
 	display: flex;
@@ -134,8 +129,6 @@
 	justify-content: center;
 }
 #final .info {
-	/* width: (350px, 100%);
-	max-width: 25%; */
 	width: 25%;
 	max-width: 250px;
 	text-align: center;
@@ -172,9 +165,9 @@
 	flex-direction: column;
 	gap: 20px;
 	align-items: center;
-	padding: 20px;
 	color: white;
+	text-align: center;
 }
 #main-footer img {
-	max-width: 300px;
+	width: 300px;
 }
