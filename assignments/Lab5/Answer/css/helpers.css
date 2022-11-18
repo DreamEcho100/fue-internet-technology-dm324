@@ -8,13 +8,19 @@
 	flex-direction: row-reverse;
 }
 
-/* section-h-v1 */
+.section-p-v1 {
+	padding: 48px 32px;
+}
+
+/* section-h */
 .section-h-v1 {
+	min-height: min(100vh, 1024px);
+}
+.section-h-v2 {
 	min-height: auto;
-	height: fit-content;
 }
 @media screen and (max-height: 768px) {
-	.section-h-v1 {
+	.section-h-v2 {
 		min-height: min(100vh, 1024px);
 	}
 }
@@ -33,7 +39,6 @@
 /* Show Case Section */
 .show-case-section {
 	display: flex;
-	padding: 48px 32px;
 	gap: 48px;
 }
 .show-case-section .img {
