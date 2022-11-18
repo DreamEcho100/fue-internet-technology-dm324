@@ -146,6 +146,15 @@
 	font-weight: lighter;
 	margin: 10px;
 }
+#final .info ul {
+	list-style: none;
+}
+
+#final .contact-details ul {
+	background-image: url(../images/contact-details-map.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 768px) {
 	#final {
