@@ -1,101 +1,12 @@
-/************************/
-/********* Global Style ***********/
-/************************/
+/******************************************/
+/************** Hero Section **************/
+/******************************************/
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html,
-body {
-	height: 100%;
-	width: 100%;
-}
-
-body {
-	font-family: 'Roboto', sans-serif;
-}
-
-nav ul {
-	list-style: none;
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
-}
-
-button {
-	background-color: transparent;
-	border: 0;
-	cursor: pointer;
-	font-size: inherit;
-}
-
-.button-v1 {
-	border: 1px solid white;
-	color: white;
-	padding: 6px;
-	border-radius: 4px;
-	transition: all 0.3s ease-in-out;
-}
-
-.button-v1:hover {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-/************************/
-/********* Main Header ***********/
-/************************/
-
-#main-header {
-	width: 100%;
-	padding: 0 16px;
-	height: 70px;
-	display: flex;
-	align-items: center;
-	background-color: rgba(0, 0, 0, 0.3);
-	color: white;
-	position: fixed;
-}
-#main-header .logo {
-	width: 200px;
-	display: flex;
-}
-#main-header .logo img {
-	width: 100%;
-}
-
-#main-header nav ul,
-#main-header nav {
-	display: flex;
-}
-
-#main-header nav {
-	justify-content: space-between;
-	width: 100%;
-}
-
-#main-header nav ul {
-	align-items: center;
-	gap: 8px;
-}
-#main-header nav ul a {
-}
-
-/************************/
-/********* Hero Section ***********/
-/************************/
-
-.hero {
+#hero {
 	background-image: url(../images/drew-coffman-1872.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
-	max-height: 700px;
 
 	padding: 70px;
 	text-align: center;
@@ -110,14 +21,113 @@ button {
 	gap: 4%;
 }
 
-.hero > * {
+#hero > * {
 	padding: 5px 0;
 }
 
-.hero h1 {
+#hero h1 {
 	font-weight: light;
 }
 
-.hero .buttons-container button {
+#hero .buttons-container button {
 	margin: 5px;
+}
+
+/******************************************/
+/*********** Our Baking Section ***********/
+/******************************************/
+#gallery {
+	padding: 20px 24px;
+}
+#gallery > header {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 20px 0px;
+	margin-bottom: 40px;
+}
+#gallery .cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+#gallery .card {
+	width: min(350px, 100%);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: lighter;
+}
+
+/******************************************/
+/********** Contact Info Section **********/
+/******************************************/
+#contact-info {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 25px;
+}
+
+/******************************************/
+/************* Final Section *************/
+/******************************************/
+
+#final {
+	padding: 40px;
+	background-color: grey;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+#final .info {
+	/* width: (350px, 100%);
+	max-width: 25%; */
+	width: 25%;
+	max-width: 250px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-weight: lighter;
+	margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	#final {
+		padding-left: 20px;
+		padding-right: 20px;
+		gap: 0;
+	}
+	#final .info {
+		width: 50%;
+		max-width: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#final .info {
+		width: 100%;
+	}
+}
+
+/******************************************/
+/************** Main Footer **************/
+/******************************************/
+#main-footer {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	padding: 20px;
+	color: white;
+}
+#main-footer img {
+	max-width: 300px;
 }

@@ -1,0 +1,112 @@
+/******************************************/
+/************** Global Style **************/
+/******************************************/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+	line-height: 1.7;
+	max-width: 2048px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav ul {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+p {
+	font-weight: 300;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+.button-v1 {
+	border: 1px solid white;
+	color: white;
+	padding: 6px;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+}
+
+.button-v1:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.section-h-v1 {
+	min-height: min(100vh, 1024px);
+	height: fit-content;
+}
+.bg-color-2 {
+	background-color: #fff8ec;
+}
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+/******************************************/
+/*********** Show Case Section ***********/
+/******************************************/
+.show-case-section {
+	display: flex;
+}
+.show-case-section > * {
+	width: 50%;
+}
+.show-case-section .text-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	padding: 60px;
+	font-weight: lighter;
+}
+.show-case-section .text-container h2 {
+	font-weight: 400;
+}
+.show-case-section > img {
+	padding: 40px;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+	.show-case-section {
+		flex-direction: column;
+	}
+	.show-case-section > * {
+		width: 100%;
+	}
+	.show-case-section .text-container {
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+	}
+	.show-case-section > img {
+		padding: 20px;
+	}
+}
