@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./globalBaseStyles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+
+		<title>Document</title>
+	</head>
+	<body>
+		<main>
+			<section class="crud-section">
+				<form class="crud-form">
+					<label class="form-field">
+						<span>first name</span>
+						<input
+							type="text"
+							name="firstName"
+							class="first-name-input"
+							min="3"
+						/>
+					</label>
+					<label class="form-field">
+						<span>last name</span>
+						<input
+							type="text"
+							name="lastName"
+							class="last-name-input"
+							min="3"
+						/>
+					</label>
+					<label class="form-field">
+						<span>salary</span>
+						<input
+							type="number"
+							name="salary"
+							class="salary-input"
+							min="0"
+							value="0"
+						/>
+					</label>
+					<label class="form-field">
+						<span>city</span>
+						<input type="text" name="city" class="city-input" min="3" />
+					</label>
+					<button type="submit">Submit</button>
+				</form>
+
+				<table class="crud-table">
+					<thead>
+						<tr>
+							<th scope="col">id</th>
+							<th scope="col">first name</th>
+							<th scope="col">last name</th>
+							<th scope="col">salary</th>
+							<th scope="col">city</th>
+							<th scope="col">created at</th>
+							<th scope="col">updated at</th>
+							<th scope="col">actions</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</section>
+		</main>
+
+		<script src="./js/main.js" defer></script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+.crud-section {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.crud-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.form-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-field > span {
+	font-weight: bold;
+}
+
+.crud-table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.crud-table td,
+.crud-table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.crud-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.crud-table tr:hover {
+	background-color: #ddd;
+}
+
+.crud-table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04aa6d;
+	color: white;
+}
