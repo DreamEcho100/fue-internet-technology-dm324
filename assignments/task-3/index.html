@@ -4,30 +4,41 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./globalBaseStyles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./css/globalBaseStyles.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
-
 		<title>Document</title>
 	</head>
 	<body>
 		<main>
 			<section class="crud-section">
+				<header class="crud-header">
+					<h1>CRUD System</h1>
+				</header>
 				<form class="crud-form">
 					<label class="form-field">
-						<span>first name</span>
+						<span>name</span>
 						<input
 							type="text"
-							name="firstName"
-							class="first-name-input"
+							name="name"
+							class="name-input"
+							required
 							min="3"
 						/>
 					</label>
 					<label class="form-field">
-						<span>last name</span>
+						<span>email</span>
 						<input
-							type="text"
-							name="lastName"
-							class="last-name-input"
+							type="email"
+							name="email"
+							class="email-input"
+							required
 							min="3"
 						/>
 					</label>
@@ -37,32 +48,58 @@
 							type="number"
 							name="salary"
 							class="salary-input"
+							required
 							min="0"
 							value="0"
 						/>
 					</label>
 					<label class="form-field">
 						<span>city</span>
-						<input type="text" name="city" class="city-input" min="3" />
+						<input
+							type="text"
+							name="city"
+							class="city-input"
+							required
+							min="3"
+						/>
 					</label>
-					<button type="submit">Submit</button>
+					<div class="submit-button-container">
+						<button type="submit">Submit</button>
+					</div>
 				</form>
 
-				<table class="crud-table">
-					<thead>
-						<tr>
-							<th scope="col">id</th>
-							<th scope="col">first name</th>
-							<th scope="col">last name</th>
-							<th scope="col">salary</th>
-							<th scope="col">city</th>
-							<th scope="col">created at</th>
-							<th scope="col">updated at</th>
-							<th scope="col">actions</th>
-						</tr>
-					</thead>
-					<tbody></tbody>
-				</table>
+				<div class="crud-table-container">
+					<table class="crud-table">
+						<thead>
+							<tr>
+								<!-- <th scope="col">id</th> -->
+								<th scope="col">name</th>
+								<th scope="col">email</th>
+								<th scope="col">salary</th>
+								<th scope="col">city</th>
+								<!-- <th scope="col">created at</th>
+							<th scope="col">updated at</th> -->
+								<th scope="col">actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <td>${data.id}</td> -->
+							<td class="name">${data.name}</td>
+							<td class="email">${data.email}</td>
+							<td class="salary">${data.salary}</td>
+							<td class="city">${data.city}</td>
+							<!-- <td class='created-at'>${data.createdAt.toLocaleString()}</td>
+						<td class='updated-at'></td> -->
+							<td class="actions-cell">
+								<button class="update-button" title="update record">
+									<i class="fa fa-edit"></i></button
+								><button class="delete-button" title="delete record">
+									<i class="fa fa-trash"></i>
+								</button>
+							</td>
+						</tbody>
+					</table>
+				</div>
 			</section>
 		</main>
 

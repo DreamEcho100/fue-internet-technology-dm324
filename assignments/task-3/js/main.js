@@ -1,7 +1,7 @@
 const crudForm = document.querySelector('.crud-form')
 
-const firstNameInput = crudForm.querySelector('.first-name-input')
-const lastNameInput = crudForm.querySelector('.last-name-input')
+const nameInput = crudForm.querySelector('.name-input')
+const emailInput = crudForm.querySelector('.email-input')
 const salaryInput = crudForm.querySelector('.salary-input')
 const cityInput = crudForm.querySelector('.city-input')
 
@@ -11,8 +11,8 @@ const crudTableBody = crudTable.querySelector('tbody')
 let formState = []
 
 function clearCRUDForm() {
-  firstNameInput.value = ''
-  lastNameInput.value = ''
+  nameInput.value = ''
+  emailInput.value = ''
   salaryInput.value = '0'
   cityInput.value = ''
 }
@@ -25,26 +25,26 @@ function updateTableRecord(id) {
   })
 
   const targetedRow = crudTableBody.querySelector(`.tr-${id}`)
-  const firstNameElement = targetedRow.querySelector('.first-name')
-  const lastNameElement = targetedRow.querySelector('.last-name')
+  const nameElement = targetedRow.querySelector('.name')
+  const emailElement = targetedRow.querySelector('.email')
   const salaryElement = targetedRow.querySelector('.salary')
   const cityElement = targetedRow.querySelector('.city')
-  const updatedAtElement = targetedRow.querySelector('.updated-at')
+  // const updatedAtElement = targetedRow.querySelector('.updated-at')
 
   const data = {
     ...targetedRecord,
-    firstName: firstNameInput.value,
-    lastName: lastNameInput.value,
+    name: nameInput.value,
+    email: emailInput.value,
     salary: salaryInput.valueAsNumber,
     city: cityInput.value,
     updatedAt: new Date(),
   }
 
-  firstNameElement.innerText = data.firstName
-  lastNameElement.innerText = data.lastName
+  nameElement.innerText = data.name
+  emailElement.innerText = data.email
   salaryElement.innerText = data.salary
   cityElement.innerText = data.city
-  updatedAtElement.innerText = data.updatedAt.toLocaleString()
+  // updatedAtElement.innerText = data.updatedAt.toLocaleString()
 
   formUpdatingRecordId = null
   clearCRUDForm()
@@ -55,8 +55,8 @@ function updateTableRecord(id) {
 function createTableRecord() {
   const data = {
     id: Math.random().toString(16).slice(2),
-    firstName: firstNameInput.value,
-    lastName: lastNameInput.value,
+    name: nameInput.value,
+    email: emailInput.value,
     salary: salaryInput.valueAsNumber,
     city: cityInput.value,
     createdAt: new Date(),
@@ -69,21 +69,29 @@ function createTableRecord() {
 
   tr.classList.add(`tr-${data.id}`)
 
-  tr.innerHTML = `<td>${data.id}</td>
-	<td class='first-name'>${data.firstName}</td>
-	<td class='last-name'>${data.lastName}</td>
+  tr.innerHTML = `<!-- <th scope='row'>${data.id}</th> -->
+	<td class='name'>${data.name}</td>
+	<td class='email'>${data.email}</td>
 	<td class='salary'>${data.salary}</td>
 	<td class='city'>${data.city}</td>
-	<td class='created-at'>${data.createdAt.toLocaleString()}</td>
-	<td class='updated-at'></td>
-	<td><button class='update-button'>update</button><button class='delete-button'>delete</button></td>`
+	<!-- <td class='created-at'>${data.createdAt.toLocaleString()}</td>
+	<td class='updated-at'></td> -->
+	<td class="actions-buttons-cell">
+		<button class="update-button" title="update record">
+			<i class="fa fa-edit"></i></button
+		><button class="delete-button" title="delete record">
+			<i class="fa fa-trash"></i>
+		</button>
+	</td>`
 
   const recordUpdateButton = tr.querySelector('.update-button')
+  console.log('recordUpdateButton', recordUpdateButton)
   const recordDeleteButton = tr.querySelector('.delete-button')
+  console.log('recordDeleteButton', recordDeleteButton)
 
   recordUpdateButton.addEventListener('click', function (event) {
-    firstNameInput.value = data.firstName
-    lastNameInput.value = data.lastName
+    nameInput.value = data.name
+    emailInput.value = data.email
     salaryInput.value = data.salary
     cityInput.value = data.city
 
